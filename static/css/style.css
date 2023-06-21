@@ -1,0 +1,333 @@
+
+.navbar {
+    background-color: #8959C7;
+}
+.chat-icon{
+    width: fit-content;
+    position: fixed;
+    right: 20px;
+    bottom: 50px;
+    z-index: 100;
+    /* color: #6e2cc4; */
+}
+
+/* -----------contact page------------- */
+.main-div{
+    width: 100%;
+    height: 690px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contact {
+    width: 80%;
+    height: 500px;
+    background-color: #e4d8f3;
+    box-shadow: 0px 0px 20px rgb(147, 124, 177);
+}
+.contact-heading{
+    font-size: 35px;
+}
+.contact-detail {
+    background-color: #8959C7;
+    width: 40%;
+    padding: 30px;
+    color: #e4d8f3;
+}
+.para {
+    font-size: 16px;
+}
+.social-media{
+    font-size: 25px;
+}
+.contact-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form-field {
+    margin-top: 50px;
+    width: fit-content;
+}
+.form-heading {
+    color: #8959C7;
+}
+.input-form {
+    margin-top: 30px;
+}
+.inp {
+    width: 650px;
+    height: 55px;
+    outline: none;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #c5ade6;
+}
+::placeholder {
+    color: #6e2cc4;
+    font-family: monospace;
+    padding-left: 15px;
+}
+.input-form textarea {
+    padding-top: 10px;
+}
+.submit-btn {
+    width: 650px;
+    height: 55px;
+    outline: none;
+    border: none;
+    color: #fff;
+    background-color: #8959C7;
+}
+
+/* ----------booking page------------*/
+
+#form-btn {
+    border: 1px solid #6e2cc4;
+    background-color: #8959C7;
+}
+
+/* ----------doctor page------------ */
+#cards {
+    background-color: #8959C7;
+    color: #f4ecff;
+}
+#doc-name-colm{
+    background-color: #f2f2f2;
+}
+
+/* ---------about us page----------- */
+.main-child-div{
+    width: 100%;
+    height: 650px;
+    position: relative;
+}
+.life-img{
+    object-fit: cover;
+}
+.about-us-head-part{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(111, 112, 111, 0.6);
+}
+.about-us-contant-part{
+    font-family: monospace;
+    font-size: 18px;
+    color: #6e2cc4;
+}
+.hospital-motto-part{
+    width: 80%;
+    height: 250px;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    margin: 0 auto;
+    box-shadow: 0 0 20px rgb(187, 186, 186);
+}
+.hospital-motto{
+    width: fit-content;
+    height: fit-content;
+}
+.motto{
+    font-size: 25px;
+}
+.line{
+    width: 120px;
+    height: 3px;
+    border-radius: 40px;
+}
+
+/* ----------home page-------------*/
+.make-an-appointment{
+    width: 100%;
+    height: 100px;
+}
+.hospital-overview-part{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+.hospital-overview{
+    margin-top: 30px;
+    height: fit-content;
+}
+.overview-heading{
+    color: #6e2cc4;
+    font-size: 45px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.overview-para{
+    font-size: 16px;
+    font-family: cursive;
+    color: #462077d7;
+}
+.hospital-image-and-rating{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+}
+.rating-card-row{
+    margin-top: 10px;
+}
+.hospital-image{
+    width: 50%;
+    height: 450px;
+}
+.rating{
+    width: 50%;
+    height: 450px;
+}
+.uh-hospital{
+    width: 100%;
+    height: 450px;
+}
+.facilities-and-services-part{
+    height: fit-content;
+    position: relative;
+    display: flex;
+}
+.facilities-and-services{
+    width: 100%;
+    height: 500px;
+    background-image: url(../image/patient-transformed.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.color-gradient{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0px;
+    background-color: rgba(154, 89, 240, 0.8);
+}
+
+/* ------------confirmation page------------- */
+
+
+/* -----------media query------------- */
+
+@media only screen and (max-width: 1400px){
+    .rating-card-row{
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 1200px){
+    .rating-card-row{
+        margin-top: 30px;
+    }
+
+    /* contact */
+    .inp, .submit-btn{
+        width: 450px;
+    }
+    .social-media{
+        font-size: 20px;
+    }
+    .contact-heading{
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    .hospital-image-and-rating{
+        display: block;
+    }
+    .hospital-image{
+        width: 100%;
+        height: fit-content;
+    }
+    .rating{
+        width: 100%;
+        height: fit-content;
+    }
+    .facilities-and-services{
+        height: 660px;
+    }
+    .color-gradient{
+        height: 660px;
+    }
+
+    /* about us */
+    .main-child-div{
+        height: 500px;
+    }
+
+    /* contact */
+    .inp, .submit-btn{
+        width: 350px;
+    }
+    .para{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .facilities-and-services{
+        height: 1150px;
+    }
+    .color-gradient{
+        height: 1150px;
+    }
+
+    /* about us */
+    .main-child-div{
+        height: 350px;
+    }
+    .hospital-motto-part{
+        width: 95%;
+    }
+
+    /* contact */
+    .main-div{
+        height: fit-content;
+    }
+    .contact{
+        margin-top: 80px;
+        margin-bottom: 50px;
+        height: fit-content;
+        flex-direction: column;
+    }
+    .contact-detail{
+        width: 100%;
+        text-align: center;
+    }
+    .contact-heading{
+        font-size: 35px;
+    }
+    .form-field{
+        margin-top: 15px;
+        margin-bottom: 25px;
+        text-align: center;
+    }  
+}
+
+@media only screen and (max-width: 576px){
+    .hospital-overview{
+        margin-top: 10px;
+    }
+    .overview-heading{
+        font-size: 35px;
+    }
+    .overview-para{
+        font-size: 12px;
+    }
+    .uh-hospital{
+        height: 300px;
+    }
+
+    /* about us */
+    .main-child-div{
+        height: 300px;
+    }
+    .motto{
+        font-size: 20px;
+    }
+
+    /* contact */
+    .inp, .submit-btn{
+        width: 210px;
+    }
+}

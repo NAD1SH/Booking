@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}
+home page
+{% endblock title %}
+
+{% block content %}
+
+<!-- image slider -->
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static '/image/hospital.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/image/doc-patient.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/image/baby1.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static '/image/baby-leg.jpg' %}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+</div>
+
+<div class="hospital-overview-part">
+  <div class="container-lg hospital-overview">
+    <h1 class="overview-heading">Overview</h1>
+    <p class="overview-para">University Hospital, one of the earliest hospitals in Malabar, has been in service to the cause of health for nearly half a century. This 400 bedded super-specialty hospital,
+      most strategically situated in the heart of the city at Mavoor Road junction,Kozhikode, is well equipped to handle medical emergencies and is considered to be one of the best referral hospitals in the region.
+      The easy accessibility to the hospital by road, rail and air and the team of well qualified and dedicated doctors and paramedical staff make it a preferred health care destination.
+    </p>
+    <div class="hospital-image-and-rating mt-2 mb-4">
+      <div class="hospital-image">
+        <img src="{% static '/image/university hospital.jpg' %}" alt="" class="uh-hospital">
+      </div>
+      <div class="rating">
+        <div class="container-fluid">
+          <div class="row rating-card-row">
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="{% static 'image/rating-star.jpeg' %}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">4.5</h5>
+                      <p class="card-text">Google Ratings</p>
+                      <p class="card-text">Our rating on Google given by our patients, explains our dedication towards them & the quality of service offered.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-12">
+              <div class="card mb-3">
+                <div class="row g-0">
+                  <div class="col-4">
+                    <img src="{% static '/image/nps-transformed.jpeg' %}" class="img-fluid rounded-start" alt="...">
+                  </div>
+                  <div class="col-8">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">82%</h5>
+                      <p class="card-text">NPS scores</p>
+                      <p class="card-text">Our NPS score shows the highest level of satisfaction we offer to our patients for treatment at Aster.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="facilities-and-services-part">
+  <div class="facilities-and-services">
+
+  </div>
+  <div class="color-gradient">
+    <div class="container">
+      <h1 class="text-white text-center mt-2 fw-normal">FACILITIES & <span class="fw-bolder">SERVICES</span></h1>
+      <div class="row my-5">
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/ambulance-icon.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">AMBULANCE</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/emergency.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">24 / 7 emergency Care</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/laboratory.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">laboratory</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/blood-bank.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">Blood Bank</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/pharmacy.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">pharmacy</p>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 my-4">
+          <h1 class="text-center"><img src="{% static 'image/ot.png' %}" alt="" width="90px" height="70px"></h1>
+          <p class="text-white fw-semibold fs-5 text-center">OT</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

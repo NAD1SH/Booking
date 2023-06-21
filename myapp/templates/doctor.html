@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title%}
+Docter
+{% endblock title %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    {% for i in doc %}
+    <div class="col-12 col-md-6">
+      <div class="card my-3 border-1">
+        <div class="row g-0">
+          <div class="col-md-6">
+            <img src="{{i.doc_image.url}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-6" id="doc-name-colm">
+            <div class="card-body">
+              <h5 class="card-title fs-4">Dr. {{i.doc_name}}</h5>
+              <p class="card-text fs-md-5">{{i.doc_spec}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+{% endblock content %}
