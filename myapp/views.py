@@ -24,6 +24,7 @@ def contact(request):
     return render(request,'contact.html')
 
 def about(request):
+    print('......')
     return render(request, 'about.html')
 
 def booking(request):
